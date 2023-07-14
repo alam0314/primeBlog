@@ -1,0 +1,18 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1040px;
+  }
+}
+.loading{
+  height: 50vh;
+  display: flex;
+  text-align: center;
+  color:rgb(0, 0, 139);
+  justify-content: center;
+  align-items: center;
+}

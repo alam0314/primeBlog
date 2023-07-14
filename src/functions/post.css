@@ -1,0 +1,108 @@
+  .main-container{   
+   display: flex;
+   width: auto;
+   justify-content: center;
+  }
+  .left{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:20px;
+  }
+  
+  
+  .right{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: bisque;
+    
+  }
+  .right .card{
+    background-color: violet;
+    height: 200px;
+    width: 200px;
+  }
+  .popular-post{
+    margin: 4rem 2rem 4rem 2rem;
+  }
+  .card-headig,h3{
+    text-align: center;
+    margin: 3%;
+  }
+ 
+  .card {
+    height:18.75rem;
+    width:15.625rem;
+    border: solid 5px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    border-radius: 5%;
+    overflow: hidden;
+    text-align: justify;
+    margin: 15px 20px auto;
+
+  }
+  .card,a{
+    text-decoration: none;
+  }
+  .card:hover {
+    box-shadow: 0 0 12px 3px blue;
+  }
+  .card-title {
+    margin-top: 20px;
+    color:blue;
+    
+  }
+  .card-text {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .card-text .fa {
+    font-size: 26px;
+  }
+  
+  .avatar img {
+    height: 150px;
+    border: solid 2px transparent;
+    
+  }
+  .card:hover .avatar img {
+    border-color: violet;
+  }
+  
+  .btn {
+    border-radius: 25px;
+  }
+
+  @media (max-width:1166px)
+{
+    .left {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 2rem;
+        
+    }
+}
+  
+  @media (max-width: 877px) {
+    .left {
+        grid-template-columns: repeat(1, 1fr);
+        .card{
+          height:400px;
+          width: 350px;
+        }
+    }
+}
+
+@media (max-width:655px){
+    .main-container{
+        display:grid;
+    }
+    .avatar img {
+      height: 200px;
+      
+    }
+    .right .card{
+      height:250px;
+      width: 250px;
+      margin-right: 2rem;
+      margin-left: 2.5rem;
+    }
+}
